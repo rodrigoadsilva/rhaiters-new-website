@@ -3,7 +3,9 @@ body{
     height: 100%;
 }
 
-.header-cover{
+.banner {
     height: 100vh;
-    background-image: url('../assets/images/cover/cover_1.jpg');
+    /* Background image*/
+    background: url("../assets/images/cover/cover_1.jpg") fixed center no-repeat;
+    background-size: cover;
 }
