@@ -1,0 +1,9 @@
+html,
+body{
+    height: 100%;
+}
+
+.header-cover{
+    height: 100vh;
+    background-image: url('../assets/images/cover/cover_1.jpg');
+}
