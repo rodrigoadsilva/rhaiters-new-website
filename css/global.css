@@ -1,91 +1,27 @@
-html,
-body {
+html, body {
+    height: 100%;
+}
+
+.banner {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    width: 100vw;
     height: 100vh;
-
-    @media not all and (hover:hover) {
+    /* Background image*/
+    background: url("../assets/images/cover/cover_1.jpg") fixed center no-repeat;
+    background-size: cover;
+    /* Ajusta o height do cover em Mobile */
+    @media not all and (hover: hover) {
         height: var(--app-height);
     }
 }
 
-.banner {
-    height: 100vh;
-    min-height: -webkit-fill-available;
-    /* Background image*/
-    background: url("../assets/images/cover/cover_1.jpg") fixed center no-repeat;
-    background-size: cover;
+.sessao-servicos {
+    background: url("../assets/images/services/background.jpg") center no-repeat;
 }
 
-/* ---------------------------------------------- /*
- * Mouse animate icon
-/* ---------------------------------------------- */
-.mouse-icon {
-    border: 2px solid #999;
-    border-radius: 16px;
-    height: 40px;
-    width: 24px;
-    display: block;
-    z-index: 10;
-    opacity: 0.7;
-  }
-  .mouse-icon .wheel {
-    -webkit-animation-name: drop;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-    -webkit-animation-name: drop;
-            animation-name: drop;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-  .mouse-icon .wheel {
-    position: relative;
-    border-radius: 10px;
-    background: #999;
-    width: 2px;
-    height: 6px;
-    top: 4px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @-webkit-keyframes drop {
-    0% {
-      top: 5px;
-      opacity: 0;
+@media only screen and (max-width: 600px) {
+    .service-image {
+        max-width: 60vw;
     }
-    30% {
-      top: 10px;
-      opacity: 1;
-    }
-    100% {
-      top: 25px;
-      opacity: 0;
-    }
-  }
-  @keyframes drop {
-    0% {
-      top: 5px;
-      opacity: 0;
-    }
-    30% {
-      top: 10px;
-      opacity: 1;
-    }
-    100% {
-      top: 25px;
-      opacity: 0;
-    }
-  }
+}

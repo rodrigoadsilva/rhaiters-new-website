@@ -1,22 +1,53 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="source/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/global.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark fixed-top" style="background-color: rgba(1, 1, 1, 0.1)">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mouse-animate-icon.css">
+    <link rel="stylesheet" href="css/pulse-button.css">
+
+    <title>Rhaiters Computer</title>
+</head>
+
+<body>
+    <nav id="navbarTop" class="navbar navbar-lg navbar-dark fixed-top navbar-expand-lg" style="background-color: rgba(1, 1, 1, 0.1)">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo_white.png" width="200" height="60" alt="">
+                <img src="assets/images/icon_logo.png" width="32" height="32" alt="">
+                <img src="assets/images/company_name.png" width="150" height="32" alt="">
             </a>
+            <a class="btn btn-primary btn-sm pulse" href="#">Loja Virtual</a>
+            <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
+                <span></span>
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicesSession">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Realizações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre a Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>            
         </div>
     </nav>
     <header>
@@ -25,26 +56,59 @@
                 <div class="row">
                     <div class="col-12 text-white">
                         <h1 class="display-3 mb-3"><strong>Especialistas em tecnologia</strong></h1>
-                        <h4>Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de alta qualidade</h4>
+                        <h4>Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
+                            alta qualidade</h4>
                     </div>
                 </div>
             </div>
-            <div class="mt-auto mb-5 pb-3">
-                <div class="mouse-icon"><div class="wheel"></div></div>
+            <div class="mt-auto mb-3">
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <h2>Belong content</h2>
+        <section id="servicesSession" class="sessao-servicos">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7">
+                    <div class="container pt-5 sessaoServicos">
+                        <h1 class="display-4 text-center mb-5">Conheça nossos serviços</h1>
+                        <div class="row">
+                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                                <img src="assets/images/services/manutencao.jpg" class="img-thumbnail service-image" alt="">
+                            </div>
+                            <div class="col-md-9 d-flex align-items-center text-start">
+                                <div>
+                                <h2>Manutenção</h2>
+                                <p>Se seu desktop ou notebook está lendo, demorando para inicializar, travando nos momentos mais importantes ou apenas um pouco <em>pesado</em> nos arquicos?
+                                <br/>
+                                <b>Nós temos a solução</b></p>
+                                <p>E não somente para seu computador, como também para monitores, NoBreaks e quaisquer equipamento de informática que possa imaginar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 order-md-2 d-flex justify-content-center">
+                                <img src="assets/images/services/impressoras.jpg" class="img-thumbnail service-image" alt="">
+                            </div>
+                            <div class="col-md-9 order-md-1 d-flex align-items-center text-end">
+                                <div>
+                                <h2>Conserto e Aluguel de Impressoras</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id et reprehenderit ratione harum, dicta porro odio nostrum debitis velit quod vel, facilis aut dolores qui, dolorem alias corporis? Dolorum, quasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="source/js/jquery-3.6.0.min.js"></script>
     <script src="source/js/bootstrap.bundle.min.js"></script>
     <script src="js/Main.js"></script>
-  </body>
+</body>
+
 </html>
