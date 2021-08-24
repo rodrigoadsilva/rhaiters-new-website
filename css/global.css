@@ -1,9 +1,27 @@
-html,
-body{
+html, body {
     height: 100%;
 }
 
-.header-cover{
+.banner {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
     height: 100vh;
-    background-image: url('../assets/images/cover/cover_1.jpg');
+    /* Background image*/
+    background: url("../assets/images/cover/cover_1.jpg") fixed center no-repeat;
+    background-size: cover;
+    /* Ajusta o height do cover em Mobile */
+    @media not all and (hover: hover) {
+        height: var(--app-height);
+    }
+}
+
+.sessao-servicos {
+    background: url("../assets/images/services/background.jpg") center no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .service-image {
+        max-width: 60vw;
+    }
 }
