@@ -9,6 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="source/css/bootstrap.min.css">
 
+    <!-- Icons CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/mouse-animate-icon.css">
@@ -18,45 +23,52 @@
 </head>
 
 <body>
-    <nav id="navbarTop" class="navbar navbar-lg navbar-dark fixed-top navbar-expand-lg" style="background-color: rgba(1, 1, 1, 0.1)">
+    <nav id="navbarTop" class="navbar navbar-lg navbar-dark fixed-top navbar-expand-lg"
+        style="background-color: rgba(1, 1, 1, 0.1)">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/icon_logo.png" width="32" height="32" alt="">
                 <img src="assets/images/company_name.png" width="150" height="32" alt="">
             </a>
-            <a class="btn btn-primary btn-sm pulse" href="#">Loja Virtual</a>
-            <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
-                aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="btn btn-primary btn-sm pulse" href="#"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
+            <button id="navbarToggle" class="navbar-toggler btn-sm ml-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
                 <span></span>
-                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll">
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll text-end">
+                    <hr class="my-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
+                    <hr class="my-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link" href="#servicesSession">Serviços</a>
                     </li>
+                    <hr class="my-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Realizações</a>
                     </li>
+                    <hr class="my-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre a Empresa</a>
                     </li>
+                    <hr class="my-0 text-white">
                     <li class="nav-item">
                     </li>
                 </ul>
-            </div>            
+            </div>
         </div>
     </nav>
-    <header>
-        <div class="banner d-flex flex-column align-items-center justify-content-center" id="banner">
+    <header class="bg-dark">
+        <div class="d-flex flex-column align-items-center justify-content-center banner_1" id="banner">
             <div class="container mt-auto">
                 <div class="row">
                     <div class="col-12 text-white">
-                        <h1 class="display-3 mb-3"><strong>Especialistas em tecnologia</strong></h1>
-                        <h4>Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
+                        <h1 class="display-3 mb-3" id="coverTitle"><strong>Especialistas em tecnologia</strong></h1>
+                        <h4 id="coverSubtitle">Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
                             alta qualidade</h4>
                     </div>
                 </div>
@@ -68,11 +80,11 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="servicesSession" class="sessao-servicos">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-7">
-                    <div class="container pt-5 sessaoServicos">
+    <section id="servicesSession" class="sessao-servicos">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="container pt-5">
                         <h1 class="display-4 text-center mb-5">Conheça nossos serviços</h1>
                         <div class="row">
                             <div class="col-md-3 mb-3 d-flex justify-content-center">
@@ -80,30 +92,49 @@
                             </div>
                             <div class="col-md-9 d-flex align-items-center text-start">
                                 <div>
-                                <h2>Manutenção</h2>
-                                <p>Se seu desktop ou notebook está lendo, demorando para inicializar, travando nos momentos mais importantes ou apenas um pouco <em>pesado</em> nos arquicos?
-                                <br/>
-                                <b>Nós temos a solução</b></p>
-                                <p>E não somente para seu computador, como também para monitores, NoBreaks e quaisquer equipamento de informática que possa imaginar.</p>
+                                    <h2>Manutenção</h2>
+                                    <p>Se seu desktop ou notebook está lendo, demorando para inicializar, travando nos
+                                        momentos mais importantes ou apenas um pouco <em>pesado</em> nos arquicos?
+                                        <br />
+                                        <b>Nós temos a solução</b>
+                                    </p>
+                                    <p>E não somente para seu computador, como também para monitores, NoBreaks e quaisquer
+                                        equipamento de informática que possa imaginar.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-3 order-md-2 d-flex justify-content-center">
-                                <img src="assets/images/services/impressoras.jpg" class="img-thumbnail service-image" alt="">
+                                <img src="assets/images/services/impressoras.jpg" class="img-thumbnail service-image"
+                                    alt="">
                             </div>
                             <div class="col-md-9 order-md-1 d-flex align-items-center text-end">
                                 <div>
-                                <h2>Conserto e Aluguel de Impressoras</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id et reprehenderit ratione harum, dicta porro odio nostrum debitis velit quod vel, facilis aut dolores qui, dolorem alias corporis? Dolorum, quasi.</p>
+                                    <h2>Conserto e Aluguel de Impressoras</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id et reprehenderit ratione
+                                        harum, dicta porro odio nostrum debitis velit quod vel, facilis aut dolores qui,
+                                        dolorem alias corporis? Dolorum, quasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                                <img src="assets/images/services/cftv.jpg" class="img-thumbnail service-image" alt="">
+                            </div>
+                            <div class="col-md-9 d-flex align-items-center text-start">
+                                <div>
+                                    <h2>Instalação de CFTP</h2>
+                                    <p>Ducimus laborum nobis error veritatis aliquid nisi, soluta magnam. Saepe est voluptas soluta iure adipisci nulla recusandae facilis aperiam fugiat! Sapiente, molestiae.</p>
+                                    <p>Tempore odit rem nostrum omnis perferendis facilis est iste deleniti eligendi! Quis!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="source/js/jquery-3.6.0.min.js"></script>
