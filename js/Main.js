@@ -6,8 +6,51 @@ $('.banner').css({'height': (($(window).height()))+'px'});
 $(window).on('resize', function(){
  $('.banner').css({'height': (($(window).height()))+'px'});
 });
+/*
+ * 
+ * Busca os reviews
+ *  
+ */
+let googleReviews;
+$.get("api/getReviews.php", function(data){
+    googleReviews = JSON.parse(data);
+});
+
 
 $(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        items:1,
+        margin:30,
+        stagePadding:30,
+        smartSpeed:450
+    });
+    /*owl.owlCarousel({
+        center: true,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
+            }
+        }
+    });*/
 
     // ********************* NAVBAR BEHAVIOR ****************************
     // Close navbar on click
@@ -56,7 +99,6 @@ $(document).ready(function(){
     //*********************** COVER BEHAVIOR ****************************
     let coverImage = 1;
     let coverChanger = setInterval(function(){
-        console.log('Mudando o cover '+coverImage);
         $("#banner").fadeTo('slow', 0.3, function(){
             if(coverImage == 1){
                 $(this).toggleClass(`banner_${coverImage} banner_${coverImage+1}`);
@@ -77,4 +119,6 @@ $(document).ready(function(){
             if(coverImage == 4){coverImage = 1;}
         }).fadeTo('slow', 1);
     }, 6000);
+
+
 });
