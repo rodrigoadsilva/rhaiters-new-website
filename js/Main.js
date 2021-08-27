@@ -2,9 +2,9 @@
 /*
  * Ajusta o tamanho do cover
  */
-$('.banner').css({'height': (($(window).height()))+'px'});
+$('#banner').css({'height': (($(window).height()))+'px'});
 $(window).on('resize', function(){
- $('.banner').css({'height': (($(window).height()))+'px'});
+ $('#banner').css({'height': (($(window).height()))+'px'});
 });
 /*
  * 
@@ -12,9 +12,10 @@ $(window).on('resize', function(){
  *  
  */
 let googleReviews;
-$.get("api/getReviews.php", function(data){
+googleReviews = JSON.parse(localStorage.getItem("googleReviews"));
+/*$.get("api/getReviews.php", function(data){
     googleReviews = JSON.parse(data);
-});
+});*/
 
 
 $(document).ready(function(){
@@ -74,7 +75,7 @@ $(document).ready(function(){
             navbarBlack = false;
         }
         if(!navbarBlack){
-            $('#navbarTop').css("background-color", "rgba(1, 1, 1, 0.8)");
+            $('#navbarTop').css("background-color", "rgba(1, 1, 1, 0.95)");
             navbarBlack = true;
         }
         else{
@@ -86,7 +87,7 @@ $(document).ready(function(){
     $(window).scroll(function (event) {
         let scroll = $(window).scrollTop();
         if(scroll >= 10){
-            $('#navbarTop').css("background-color", "rgba(1, 1, 1, 0.8)");
+            $('#navbarTop').css("background-color", "rgba(1, 1, 1, 0.95)");
             navbarBlack = true;
         }
         else{
