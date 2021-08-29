@@ -2,6 +2,13 @@ html, body {
     height: 100%;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .banner_1 {
     padding: 0;
     margin: 0;
@@ -46,15 +53,57 @@ html, body {
     background: url("../assets/images/services/background.jpg") center no-repeat;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+.sessao-opinioes {
+    background: url("../assets/images/opinions/background_2.jpg") fixed center no-repeat;
+    
+}
+.sessao-mensagens{
+    background: url("../assets/images/mensages/background_1.jpg");
+    background-size: 100% 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 10px 17px -4px #777777;
+    box-shadow: 3px 10px 17px -4px #777777
+}
+
+.ratings i {
+    color: #ffd900
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float, .my-float:hover{
+	margin-top:16px;
+    text-decoration: none !important;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .float {
+        right:20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .service-image {
-        max-width: 60vw;
+        max-width: 40vw;
     }
 }

@@ -6,16 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Frameworks CSS -->
     <link rel="stylesheet" href="source/css/bootstrap.min.css">
-
-    <!-- Icons CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
-    <link rel="stylesheet" href="source/css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="source/css/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="source/css/sweetalert2.min.css">
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/global.css"/>
@@ -29,11 +26,11 @@
     <nav id="navbarTop" class="navbar navbar-lg navbar-dark fixed-top navbar-expand-lg"
         style="background-color: rgba(1, 1, 1, 0.1)">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand mr-0" href="#" style="margin-right: 0px;">
                 <img src="assets/images/icon_logo.png" width="32" height="32" alt="">
                 <img src="assets/images/company_name.png" width="150" height="32" alt="">
-                <a class="btn btn-primary btn-sm pulse ml-0" href="#"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
             </a>
+            <a class="btn btn-primary btn-sm pulse mx-2" href="https://lojaraiters.com.br/" target="_blank"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
             <button id="navbarToggle" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -41,7 +38,7 @@
                     <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
                 </span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
+            <div id="menuNavbar" class="collapse navbar-collapse justify-content-end">
                 <span></span>
                 <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll text-end">
                     <hr class="my-0 text-white">
@@ -50,31 +47,33 @@
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicesSession">Serviços</a>
+                        <a class="nav-link" href="#sessaoServicos">Serviços</a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Realizações</a>
+                        <a class="nav-link" href="#sessaoOpinioes">Opiniões</a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre a Empresa</a>
                     </li>
                     <hr class="my-0 text-white">
-                    <li class="nav-item">
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="bg-dark">
-        <div class="d-flex flex-column align-items-center justify-content-center banner_1" id="banner">
+
+    <header class="bg-dark" hidden>
+        <div id="banner" class="d-flex flex-column align-items-center justify-content-center banner_1">
             <div class="container mt-auto">
                 <div class="row">
                     <div class="col-12 text-white">
                         <h1 class="display-3 mb-3" id="coverTitle"><strong>Especialistas em tecnologia</strong></h1>
                         <h4 id="coverSubtitle">Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
-                            alta qualidade</h4>
+                            alta qualidade</h4>                        
+                    </div>
+                    <div class="col-12 d-flex justify-content-center pt-5">
+                        <button class="btn btn-success">SOLICITE UM ORÇAMENTO</button>
                     </div>
                 </div>
             </div>
@@ -85,12 +84,14 @@
             </div>
         </div>
     </header>
-    <section id="servicesSession" class="sessao-servicos">
+
+    <section id="sessaoServicos" class="sessao-servicos"hidden>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <div class="container pt-5">
-                        <h1 class="display-4 text-center mb-5">Conheça nossos serviços</h1>
+                    <div class="container py-5">
+                        <h1 class="display-4 text-center mb-4 mt-2">Conheça nossos serviços</h1>
+                        <hr>
                         <div class="row">
                             <div class="col-md-3 mb-3 d-flex justify-content-center">
                                 <img src="assets/images/services/manutencao.jpg" class="img-thumbnail service-image" alt="">
@@ -109,9 +110,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 order-md-2 d-flex justify-content-center">
-                                <img src="assets/images/services/impressoras.jpg" class="img-thumbnail service-image"
-                                    alt="">
+                            <div class="col-md-3 mb-3 order-md-2 d-flex justify-content-center">
+                                <img src="assets/images/services/impressoras.jpg" class="img-thumbnail service-image" alt="">
                             </div>
                             <div class="col-md-9 order-md-1 d-flex align-items-center text-end">
                                 <div>
@@ -139,23 +139,85 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="owl-carousel owl-theme">
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-          </div>
+
+    <section id="sessaoOpinioes" class="sessao-opinioes" hidden>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="container pt-5 mb-5">
+                        <h1 class="display-4 text-center mb-4 mt-2">Veja o que estão falando</h1>
+                        <hr>
+                        <div class="glider-contain">
+                            <div id="carouselReviews" class="glider">
+                            </div>
+                            
+                            <!-- Botões e pontos para navegação do carrosel-->
+                            <!--<button aria-label="Previous" class="glider-prev">«</button>
+                            <button aria-label="Next" class="glider-next">»</button>
+                            <div role="tablist" class="dots"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
+    <section id="sessaoMensagem" class="sessao-mensagens">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10 mb-3">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h2 class="display-6 mb-4">Deixe uma mensagem que em breve entraremos em contato</h2>
+                            <form id="contato_form">
+                                <div class="form-group mb-1"> 
+                                    <label for="form16">Nome</label>
+                                    <span class="form-text text-danger">*</span>
+                                    <input type="text" class="form-control" id="contato_nome" name="contato_nome" placeholder="Digite aqui seu nonme" required="">
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="form16">Telefone</label>
+                                    <span class="form-text text-danger">*</span>
+                                    <input type="text" class="form-control" id="contato_numero" name="contato_numero" placeholder="51 9999-999" required="">
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="form16">Email para contato caso tenha</label>
+                                    <input type="email" class="form-control" id="contato_email" name="contato_email" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="form16">Deixe sua mensage</label>
+                                    <span class="form-text text-danger">*</span>
+                                    <textarea class="form-control" id="contato_mensagem" name="contato_mensagem" rows="3" placeholder="Digite aqui sua mensagem" required=""></textarea>
+                                </div>
+                                <div class="form-text text-danger">* Obrigatório</div>
+                                <button class="btn btn-primary mt-3" id="btn_enviar_contato"><i class="fas fa-paper-plane"></i> Enviar</button>
+                                <img class="img-fluid mt-3" id="gifEnviandoContato" src="assets/images/loading.gif" width="50" hidden>
+                            </form>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h2 class="display-6 mb-4">Ou se preferir, poderá nos encontrar aqui</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.846134187266!2d-51.19817288442375!3d-30.012574181893836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c19d8731fb%3A0x17bec84a7966abf4!2sAv.+S%C3%A3o+Pedro%2C+1348+-+S%C3%A3o+Geraldo%2C+Porto+Alegre+-+RS%2C+90230-122!5e0!3m2!1spt-BR!2sbr!4v1538351705923"
+                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <a href="https://api.whatsapp.com/send?phone=555193599834" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- JS Frameworks -->
     <script src="source/js/jquery-3.6.0.min.js"></script>
     <script src="source/js/bootstrap.bundle.min.js"></script>
-    <script src="source/js/owl.carousel.min.js"></script>
+    <script src="source/js/glider.min.js"></script>
+    <script src="source/js/sweetalert2.all.min.js"></script>
+
+    <script src="js/Carousel.js"></script>
+    <script src="js/Reviews.js"></script>
     <script src="js/Main.js"></script>
 </body>
 
