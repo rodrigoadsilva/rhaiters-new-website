@@ -7,7 +7,7 @@ $(window).on('resize', function(){
 });
 
 $(document).ready(function(){
-
+  
     /*
      * NAVBAR BEHAVIOR
      *

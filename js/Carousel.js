@@ -3,7 +3,7 @@ function constructCarousel(){
   const glider = new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
     slidesToScroll: 1,
-    draggable: false,
+    draggable: true,
     responsive: [
         {
           breakpoint: 600,

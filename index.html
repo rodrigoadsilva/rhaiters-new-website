@@ -55,6 +55,10 @@
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
+                        <a class="nav-link" href="#sessaoContato">Contato</a>
+                    </li>
+                    <hr class="my-0 text-white">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Sobre a Empresa</a>
                     </li>
                     <hr class="my-0 text-white">
@@ -63,7 +67,7 @@
         </div>
     </nav>
 
-    <header class="bg-dark" hidden>
+    <header class="bg-dark">
         <div id="banner" class="d-flex flex-column align-items-center justify-content-center banner_1">
             <div class="container mt-auto">
                 <div class="row">
@@ -85,12 +89,12 @@
         </div>
     </header>
 
-    <section id="sessaoServicos" class="sessao-servicos"hidden>
+    <section id="sessaoServicos" class="sessao-servicos">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="container py-5">
-                        <h1 class="display-4 text-center mb-4 mt-2">Conheça nossos serviços</h1>
+                        <h1 class="display-4 text-center mb-4 mt-2"><strong>Conheça nossos serviços</strong></h1>
                         <hr>
                         <div class="row">
                             <div class="col-md-3 mb-3 d-flex justify-content-center">
@@ -140,12 +144,12 @@
         </div>
     </section>
 
-    <section id="sessaoOpinioes" class="sessao-opinioes" hidden>
+    <section id="sessaoOpinioes" class="sessao-opinioes">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="container pt-5 mb-5">
-                        <h1 class="display-4 text-center mb-4 mt-2">Veja o que estão falando</h1>
+                        <h1 class="display-4 text-center mb-4 mt-2"><strong>Veja o que estão falando</strong></h1>
                         <hr>
                         <div class="glider-contain">
                             <div id="carouselReviews" class="glider">
@@ -163,41 +167,41 @@
         
     </section>
 
-    <section id="sessaoMensagem" class="sessao-mensagens">
+    <section id="sessaoContato" class="sessao-contato">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-md-10 mb-3">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <h2 class="display-6 mb-4">Deixe uma mensagem que em breve entraremos em contato</h2>
-                            <form id="contato_form">
+                            <form method="POST" id="contatoForm">
                                 <div class="form-group mb-1"> 
                                     <label for="form16">Nome</label>
                                     <span class="form-text text-danger">*</span>
-                                    <input type="text" class="form-control" id="contato_nome" name="contato_nome" placeholder="Digite aqui seu nonme" required="">
+                                    <input type="text" class="form-control" id="contatoNome" name="contato_nome" placeholder="Digite aqui seu nome" required="">
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="form16">Telefone</label>
                                     <span class="form-text text-danger">*</span>
-                                    <input type="text" class="form-control" id="contato_numero" name="contato_numero" placeholder="51 9999-999" required="">
+                                    <input type="number" class="form-control" id="contatoNumero" name="contato_numero" placeholder="51 9999-999" required="">
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="form16">Email para contato caso tenha</label>
-                                    <input type="email" class="form-control" id="contato_email" name="contato_email" placeholder="email@example.com">
+                                    <input type="email" class="form-control" id="contatoEmail" name="contato_email" placeholder="email@example.com">
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="form16">Deixe sua mensage</label>
                                     <span class="form-text text-danger">*</span>
-                                    <textarea class="form-control" id="contato_mensagem" name="contato_mensagem" rows="3" placeholder="Digite aqui sua mensagem" required=""></textarea>
+                                    <textarea class="form-control" id="contatoMensagem" name="contato_mensagem" rows="3" placeholder="Digite aqui sua mensagem" required=""></textarea>
                                 </div>
                                 <div class="form-text text-danger">* Obrigatório</div>
-                                <button class="btn btn-primary mt-3" id="btn_enviar_contato"><i class="fas fa-paper-plane"></i> Enviar</button>
-                                <img class="img-fluid mt-3" id="gifEnviandoContato" src="assets/images/loading.gif" width="50" hidden>
+                                <button type="submit" class="btn btn-primary mt-3" id="btnEnviarContato"><i class="fas fa-paper-plane"></i> Enviar</button>
+                                <img class="img-fluid" id="gifEnviaContato" src="assets/images/loading.gif" width="45" style="display: none;">
                             </form>
                         </div>
                         <div class="col-md-6 mb-3">
                             <h2 class="display-6 mb-4">Ou se preferir, poderá nos encontrar aqui</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.846134187266!2d-51.19817288442375!3d-30.012574181893836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c19d8731fb%3A0x17bec84a7966abf4!2sAv.+S%C3%A3o+Pedro%2C+1348+-+S%C3%A3o+Geraldo%2C+Porto+Alegre+-+RS%2C+90230-122!5e0!3m2!1spt-BR!2sbr!4v1538351705923"
+                            <iframe src="https://maps.google.com/maps?q=Rhaiters&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                         </div>
                     </div>
@@ -218,6 +222,7 @@
 
     <script src="js/Carousel.js"></script>
     <script src="js/Reviews.js"></script>
+    <script src="js/Contato.js"></script>
     <script src="js/Main.js"></script>
 </body>
 

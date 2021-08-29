@@ -105,3 +105,4 @@ dist
 
 #Secrets
 api/apiKey
+php/mailPassword

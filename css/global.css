@@ -51,14 +51,15 @@ html, body {
 
 .sessao-servicos {
     background: url("../assets/images/services/background.jpg") center no-repeat;
+    background-size: 100% 100%;
 }
 
 .sessao-opinioes {
     background: url("../assets/images/opinions/background_2.jpg") fixed center no-repeat;
     
 }
-.sessao-mensagens{
-    background: url("../assets/images/mensages/background_1.jpg");
+.sessao-contato{
+    background: url("../assets/images/contato/background_1.jpg");
     background-size: 100% 100%;
 }
 
@@ -94,6 +95,19 @@ html, body {
 	margin-top:16px;
     text-decoration: none !important;
     color: white;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:350px;
+    width:600px;
+    }
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:350px;
+    width:600px;
 }
 
 @media only screen and (max-width: 600px) {
