@@ -1,15 +1,14 @@
-/*
- * Ajusta o tamanho do cover
- */
-$('#banner').css({'height': (($(window).height()))+'px'});
-$(window).on('resize', function(){
-    $('#banner').css({'height': (($(window).height()))+'px'});
-});
-
 $(document).ready(function(){
     /*
+     * Ajusta o tamanho do cover
+     */
+    $('#banner').css({'height': (($(window).height()))+'px'});
+    $(window).on('resize', function(){
+        $('#banner').css({'height': (($(window).height()))+'px'});
+    });
+
+    /*
      * NAVBAR BEHAVIOR
-     *
      */
     // Close navbar on click
     $('.navbar-nav>li>a').on('click', function(){
@@ -55,9 +54,7 @@ $(document).ready(function(){
     
     /*
      * COVER BEHAVIOR
-     *
      */
-        
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -86,19 +83,4 @@ $(document).ready(function(){
       sleep(6000).then(() => { changeCover() });
     };
     sleep(6000).then(() => { changeCover() });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });

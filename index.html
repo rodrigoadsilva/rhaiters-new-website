@@ -261,22 +261,25 @@
                             <div class="col-md-6">
                                 <div class="form-group mb-2">
                                     <label for="inputNomeOrcamento"><strong>Nome Completo</strong></label><span class="text-danger"> *</span>
-                                    <input type="text" class="form-control" id="inputNomeOrcamento" name="inputNomeOrcamento" placeholder="Digite nome completo ou empresa" required="">
+                                    <input type="text" class="form-control" id="inputNomeOrcamento" name="inputNomeOrcamento"
+                                        placeholder="Digite nome completo ou empresa" required>
                                 </div>
                                 <div class="form-group mb-2">
                                     <label for="inputTelefone"><strong>Telefone para contato</strong></label><span class="text-danger"> *</span>
-                                    <input type="text" class="form-control" id="inputNumeroOrcamento" name="inputNumeroOrcamento" placeholder="Digite aqui um número para contato" required="">
+                                    <input type="number" class="form-control" id="inputNumeroOrcamento" name="inputNumeroOrcamento"
+                                        placeholder="Digite aqui um número para contato" required>
                                 </div>
                                 <div class="form-group mb-2">
                                     <label for="inputEmailOrcamento"><strong>Email para contato</strong></label>
-                                    <input type="email" class="form-control" id="inputEmailOrcamento" name="inputEmailOrcamento" placeholder="Caso tenha email para contato, digite aqui">
+                                    <input type="email" class="form-control" id="inputEmailOrcamento" name="inputEmailOrcamento"
+                                        placeholder="Caso tenha email para contato, digite aqui">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group mb-2">
                                     <label for="inputJaECliente"><strong>Já é cliente</strong></label><span class="text-danger"> *</span><br>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="radioJaECliente" value="sim" autofocus="" required="">
+                                        <input class="form-check-input" type="radio" name="radioJaECliente" value="sim" autofocus="" required>
                                         <label class="form-check-label" for="radioJaECliente1">Sim</label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -289,36 +292,36 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="manutencao" autofocus="" required="">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Manutenção" autofocus="" required="">
                                                 <label class="form-check-label" for="radioTipoServico1">Manutenção Desktop/Notebook</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="redes">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Redes">
                                                 <label class="form-check-label" for="radioTipoServico6">Redes</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="recarga">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Tonner-Tinta">
                                                 <label class="form-check-label" for="radioTipoServico2">Tonner/Cartucho</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="cftv">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="CFTV">
                                                 <label class="form-check-label" for="radioTipoServico3">CFTV</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="consultoria">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Consultoria">
                                                 <label class="form-check-label" for="radioTipoServico4">Consultoria</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="impressoras">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Impressoras">
                                                 <label class="form-check-label" for="radioTipoServico5">Impressoras</label>
                                             </div>
                                             
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="outros">
+                                                <input class="form-check-input" type="radio" name="radioTipoServico" value="Outros">
                                                 <label class="form-check-label" for="radioTipoServico7">Outro</label>
                                             </div>
                                         </div>
@@ -330,11 +333,12 @@
                         
                         <div class="form-group">
                             <label for="inputDescricao"><strong>Descreva aqui sua solicitação</strong></label><span class="text-danger"> *</span>
-                            <textarea class="form-control" id="inputDescricaoOrcamento" name="inputDescricaoOrcamento" rows="3" placeholder="Descreva aqui mais detalhes sobre sua solicitação..." required=""></textarea>
+                            <textarea class="form-control" id="inputDescricaoOrcamento" name="inputDescricaoOrcamento" rows="3" 
+                                placeholder="Descreva aqui mais detalhes sobre sua solicitação..." required></textarea>
                             <span class="text-danger">* Campos obrigatórios</span>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-2" id="btn_enviar_orcamento"><i class="fas fa-paper-plane"></i>Enviar</button>
-                        <img class="img-fluid" id="gif_enviando_orcamento" src="assets/images/loading.gif" width="45" style="display: none;">
+                        <button type="submit" class="btn btn-primary mt-2" id="btnEnviarOrcamento"><i class="fas fa-paper-plane"></i>Enviar</button>
+                        <img class="img-fluid" id="gifEnviaOrcamento" src="assets/images/loading.gif" width="45" style="display: none;">
                     </form>
                 </div>
             </div>
@@ -350,6 +354,7 @@
     <script src="js/Carousel.js"></script>
     <script src="js/Reviews.js"></script>
     <script src="js/Contato.js"></script>
+    <script src="js/Orcamento.js"></script>
     <script src="js/Main.js"></script>
 </body>
 

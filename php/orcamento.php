@@ -10,24 +10,14 @@
 
 	$mailPassword = file_get_contents("mailPassword");
 
-    if(isset($_POST['contatoNome'])){
+    if(isset($_POST['orcamentoNome'])){
 
-		$nome_contato = $_POST['contatoNome'];
-		$telefone_contato = $_POST['contatoNumero'];
-		$mensagem_contato = $_POST['contatoMensagem'];
-		$email_contato = $_POST['contatoEmail'];
-
-        /*
-         *
-         * Teste manual de envio
-         *
-        
-        $nome_contato = 'Rodrigo da Silva';
-		$telefone_contato = '51 919119911';
-		$mensagem_contato = 'Testa JS';
-		$email_contato = 'Ah não.';
-        */
-        
+		$nomeOrcamento = $_POST['contatoNome'];
+		$telefoneOrcamento = $_POST['orcamentoNumero'];
+        $emailOrcamento = $_POST['orcamentoEmail'];
+		$descricaoOrcamento = $_POST['orcamentoDescricao'];
+        $tipoServico = $_POST['orcamentoTipoServico'];
+        $jaECliente = $_POST['orcamentoJaCliente'];        
 
 		$mail = new PHPMailer(true);                                                // Passing `true` enables exceptions
 		try {
@@ -45,19 +35,21 @@
 		    $mail->Port = 465;                                                      // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom('site@rhaiters.com.br', 'Contato Site');
+		    $mail->setFrom('site@rhaiters.com.br', 'Orçamento Site');
 		    $mail->addAddress('tecnico3@rhaiters.com.br');                          // Name is optional
 
 		    //Content
 		    $mail->isHTML(true);                                                    // Set email format to HTML
 		    $mail->CharSet = 'UTF-8';							                    // Define que receberá caractéres especiais.
-		    $mail->Subject = 'MENSAGEM DE CONTATO DO SITE';                         // O título do email
+		    $mail->Subject = 'MENSAGEM DE ORÇAMENTO DO SITE';                         // O título do email
 		    $mail->Body    = '<hr>                                                  
                               <strong>Informações deixadas pelo usuário:</strong><br>
-		    				  <b>Nome -</b> '.$nome_contato.'<br>
-		    				  <b>Telefone -</b> '.$telefone_contato.'<br>
-		    				  <b>Email -</b> '.$email_contato.'<br>
-		    				  <b>Mensagem -</b> '.$mensagem_contato;
+		    				  <b>Nome -</b> '.$nomeOrcamento.'<br>
+		    				  <b>Telefone -</b> '.$telefoneOrcamento.'<br>
+		    				  <b>Email -</b> '.$emailOrcamento.'<br>
+		    				  <b>Descrição -</b> '.$descricaoOrcamento.'<br>
+                              <b>Tipo de serviço -</b> '.$tipoServico.'<br>
+                              <b>Já é cliente -</b> '.$jaECliente;
 		    $mail->AltBody = 'Ainda em produção';
 
 		    $mail->send();
