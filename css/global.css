@@ -97,17 +97,8 @@ html, body {
     color: white;
 }
 
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:350px;
-    width:600px;
-    }
-.gmap_canvas {
-    overflow:hidden;
-    background:none !important;
-    height:350px;
-    width:600px;
+.citacao{
+    font-family: 'Zilla Slab', serif;
 }
 
 @media only screen and (max-width: 600px) {

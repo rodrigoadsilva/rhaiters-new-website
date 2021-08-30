@@ -7,7 +7,6 @@ $(window).on('resize', function(){
 });
 
 $(document).ready(function(){
-  
     /*
      * NAVBAR BEHAVIOR
      *
@@ -88,9 +87,6 @@ $(document).ready(function(){
     };
     sleep(6000).then(() => { changeCover() });
 
-    
-
-    
 
 
 

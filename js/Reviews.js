@@ -4,11 +4,11 @@
  *  
  */
 let googleReviews;
-googleReviews = JSON.parse(localStorage.getItem("googleReviews"));
-/*$.get("api/getReviews.php", function(data){
+//googleReviews = JSON.parse(localStorage.getItem("googleReviews"));
+$.get("api/getReviews.php", function(data){
     googleReviews = JSON.parse(data);
     makeCarousel();
-});*/
+});
 
 function makeCarousel(){
     let reviewsResult = googleReviews.result.reviews;
@@ -29,6 +29,4 @@ function makeCarousel(){
     $('#carouselReviews').html(el);
     constructCarousel();
 }
-
-makeCarousel();
 
