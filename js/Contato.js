@@ -36,7 +36,7 @@ $(document).ready(function(){
                         ciEmail.val('');
                     }
                     else{
-                        // TODO Colocar uma call para avisar quando o servidor não conseguir enviar a mensagem
+                        // TODO: Colocar uma call para avisar quando o servidor não conseguir enviar a mensagem
                         Swal.fire({
                             icon: 'error',
                             title: 'Ops...',
@@ -49,7 +49,7 @@ $(document).ready(function(){
                     }
                 }
                 else{
-                    // TODO Colocar uma call para avisar quando o servidor não responder
+                    // TODO: Colocar uma call para avisar quando o servidor não responder
                     Swal.fire({
                         icon: 'error',
                         title: 'Ops...',

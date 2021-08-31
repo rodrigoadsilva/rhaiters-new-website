@@ -12,7 +12,7 @@
 
     if(isset($_POST['orcamentoNome'])){
 
-		$nomeOrcamento = $_POST['contatoNome'];
+		$nomeOrcamento = $_POST['orcamentoNome'];
 		$telefoneOrcamento = $_POST['orcamentoNumero'];
         $emailOrcamento = $_POST['orcamentoEmail'];
 		$descricaoOrcamento = $_POST['orcamentoDescricao'];
@@ -36,7 +36,7 @@
 
 		    //Recipients
 		    $mail->setFrom('site@rhaiters.com.br', 'Orçamento Site');
-		    $mail->addAddress('tecnico3@rhaiters.com.br');                          // Name is optional
+		    $mail->addAddress('atendimento@rhaiters.com.br');                          // Name is optional
 
 		    //Content
 		    $mail->isHTML(true);                                                    // Set email format to HTML
@@ -47,9 +47,9 @@
 		    				  <b>Nome -</b> '.$nomeOrcamento.'<br>
 		    				  <b>Telefone -</b> '.$telefoneOrcamento.'<br>
 		    				  <b>Email -</b> '.$emailOrcamento.'<br>
-		    				  <b>Descrição -</b> '.$descricaoOrcamento.'<br>
                               <b>Tipo de serviço -</b> '.$tipoServico.'<br>
-                              <b>Já é cliente -</b> '.$jaECliente;
+                              <b>Já é cliente -</b> '.$jaECliente.'<br>
+							  <b>Descrição -</b> '.$descricaoOrcamento;
 		    $mail->AltBody = 'Ainda em produção';
 
 		    $mail->send();

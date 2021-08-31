@@ -46,7 +46,7 @@
 
 		    //Recipients
 		    $mail->setFrom('site@rhaiters.com.br', 'Contato Site');
-		    $mail->addAddress('tecnico3@rhaiters.com.br');                          // Name is optional
+		    $mail->addAddress('atendimento@rhaiters.com.br');                          // Name is optional
 
 		    //Content
 		    $mail->isHTML(true);                                                    // Set email format to HTML
