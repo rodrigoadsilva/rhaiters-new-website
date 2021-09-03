@@ -109,6 +109,6 @@ html, body {
 
 @media only screen and (max-width: 600px) {
     .service-image {
-        max-width: 40vw;
+        max-width: 50vw;
     }
 }
