@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
     <!-- Frameworks CSS -->
     <link rel="stylesheet" href="source/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
@@ -28,12 +30,12 @@
 <body>
     <nav id="navbarTop" class="navbar navbar-lg navbar-dark fixed-top navbar-expand-lg"
         style="background-color: rgba(1, 1, 1, 0.1)">
-        <div class="container">
+        <div class="container px-1">
             <a class="navbar-brand mr-0" href="#" style="margin-right: 0px;">
                 <img src="assets/images/icon_logo.png" width="32" height="32" alt="">
                 <img src="assets/images/company_name.png" width="150" height="32" alt="">
             </a>
-            <a class="btn btn-primary btn-sm pulse mx-2" href="https://lojaraiters.com.br/" target="_blank"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
+            <a class="btn btn-primary btn-sm pulse mx-1" href="https://lojaraiters.com.br/" target="_blank"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
             <button id="navbarToggle" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -75,12 +77,12 @@
             <div class="container mt-auto">
                 <div class="row">
                     <div class="col-12 text-white">
-                        <h1 class="display-3 mb-3" id="coverTitle"><strong>Especialistas em tecnologia</strong></h1>
-                        <h4 id="coverSubtitle">Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
+                        <h1 class="display-4 mb-3 text-center" id="coverTitle"><strong>Especialistas em Tecnologia</strong></h4>
+                        <h4 id="coverSubtitle" class="text-center" style="color: #d2d2d2;">Disponibilizando para sua empresa especialistas prontamente aptos a entregar soluções de
                             alta qualidade</h4>                        
                     </div>
                     <div class="col-12 d-flex justify-content-center pt-5">
-                        <button class="btn btn-success" onclick="$('#orcamentoModal').modal('toggle')">SOLICITE UM ORÇAMENTO</button>
+                        <a id="orcamentoBtn" class="btn text-white btn-lg" onclick="$('#orcamentoModal').modal('toggle')">SOLICITE UM ORÇAMENTO</a>
                     </div>
                 </div>
             </div>
@@ -99,47 +101,104 @@
                     <div class="container py-5">
                         <h1 class="display-4 text-center mb-4 mt-2"><strong>Conheça nossos serviços</strong></h1>
                         <hr>
-                        <div class="row">
+                        <div class="row mb-5">
                             <div class="col-md-3 mb-3 d-flex justify-content-center">
-                                <img src="assets/images/services/notebook.jpg" class="img-fluid rounded-circle service-image" style="height: 200px;"alt="">
+                                <img src="assets/images/services/notebook.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
-                            <div class="col-md-9 d-flex align-items-center text-start">
+                            <div class="col-md-9 d-flex align-items-center">
                                 <div>
-                                    <h2>Manutenção</h2>
-                                    <p style="text-align: justify">Segundo dados de órgãos de pesquisa e estatística, as empresa brasileiras gastam porcentual significativo dos seus faturamentos com manutenção corretiva de microcomputadores e notebooks, a fim de reduzir esses custos a Rhaiters oferecer planos de manutenção preventiva com baixo investimento, para pequenas, medias e grandes empresas.</p>
-                                    <ul>
-                                        <li>Manutenção Hardware</li>
-                                        <li>Manutenção Software</li>
-                                        <li>Limpeza</li>
-                                        <li>Backup</li>
-                                        <li>Troca de tela</li>
-                                        <li>troca de teclado</li>
-                                    </ul>
+                                    <h2 class="text-center">Manutenção</h2>
+                                    <p class="alternative-p">
+                                        Segundo dados dos órgãos de pesquisa e estatística, as empresas brasileiras gastam um percentual 
+                                        significativo dos seus faturamentos com manutenção corretiva de Desktops e Notebooks. A fim de 
+                                        reduzir esses custos a Rhaiters oferece planos de manutenção preventiva com baixo investimento 
+                                        para pequenas, médias e grandes empresas.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Manutenção Hardware</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Manutenção Software</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Limpeza</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Backup</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Troca de tela</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Troca de teclado</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-5">
                             <div class="col-md-3 mb-3 order-md-2 d-flex justify-content-center">
-                                <img src="assets/images/services/2.jpg" class="img-thumbnail service-image" alt="">
+                                <img src="assets/images/services/suporte_remoto.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
-                            <div class="col-md-9 order-md-1 d-flex align-items-center text-end">
+                            <div class="col-md-9 order-md-1 d-flex align-items-center">
                                 <div>
-                                    <h2>Conserto e Aluguel de Impressoras</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id et reprehenderit ratione
-                                        harum, dicta porro odio nostrum debitis velit quod vel, facilis aut dolores qui,
-                                        dolorem alias corporis? Dolorum, quasi.</p>
+                                    <h2 class="text-center">Suporte Remoto</h2>
+                                    <p class="alternative-p">
+                                        Estamos vivendo um período de transição nas relações de trabalho. O presencial está sendo intercalado 
+                                        com home-office. O suporte remoto tem agregado valor neste processo com eficiência em suas ações, se 
+                                        conectando à máquina do colaborador e solucionado problemas do cotidiano. Desta forma contribuímos 
+                                        com a produtividade do profissional e auxiliamos os gestores a direcionar o foco em seu core business.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Instalação/Configuração de aplicações</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Instalação de impressoras e periféricos</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Update de programas e Sistemas Operacionais</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Configuração de rede</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Diagnóstico de falhas em geral</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-5">
                             <div class="col-md-3 mb-3 d-flex justify-content-center">
-                                <img src="assets/images/services/3.jpg" class="img-thumbnail service-image" alt="">
+                                <img src="assets/images/services/cftv.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
-                            <div class="col-md-9 d-flex align-items-center text-start">
+                            <div class="col-md-9 d-flex align-items-center">
                                 <div>
-                                    <h2>Instalação de CFTP</h2>
-                                    <p>Ducimus laborum nobis error veritatis aliquid nisi, soluta magnam. Saepe est voluptas soluta iure adipisci nulla recusandae facilis aperiam fugiat! Sapiente, molestiae.</p>
-                                    <p>Tempore odit rem nostrum omnis perferendis facilis est iste deleniti eligendi! Quis!</p>
+                                    <h2 class="text-center">CFTV</h2>
+                                    <p class="alternative-p">
+                                        O sistemas de captação de imagens é uma importante ferramenta para evitar furtos, roubos e identificação 
+                                        de eventos, oferecendo ainda a comodidade de monitorar seu patrimônio na palma de sua mão. A Rhaiters tem 
+                                        expertise que você necessita para proteger seu patrimônio.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Consultoria sobre sistema de captação de imagens</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Diagnóstico para colocação de CFTV</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Instalação e Manutenção de equipamentos CFTV</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Estruturação de cabeamento</div>
+                                        <div class="col-md-4"><i class="fas fa-hand-point-right"></i> Venda de equipamentos CFTV</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-3 mb-3 order-md-2 d-flex justify-content-center">
+                                <img src="assets/images/services/impressora.jpg" class="img-fluid rounded-circle service-image" alt="">
+                            </div>
+                            <div class="col-md-9 order-md-1 d-flex align-items-center">
+                                <div>
+                                    <h2 class="text-center">Impressoras e Suprimentos</h2>
+                                    <p class="alternative-p">
+                                        Oferecemos aos nossos clientes redução de custos com impressões por meio de planos de locação de 
+                                        impressoras monocromáticas, jato de tinta e laser. Disponibilizamos suporte remoto, manutenção 
+                                        periódica e fornecemos suprimentos (tinta ou toner).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                                <img src="assets/images/services/backup.jpg" class="img-fluid rounded-circle service-image" alt="">
+                            </div>
+                            <div class="col-md-9 d-flex align-items-center">
+                                <div>
+                                    <h2 class="text-center">Backup de Arquivos</h2>
+                                    <p class="alternative-p">
+                                        Qualquer usuário de computador está sujeito a perder seus dados, seja por falhas na máquina,
+                                        ataques cibernéticos ou apenas acidentes.<br/>
+                                        Pensando nisso é que disponibilizamos para nossos clientes uma infraestrutura de 
+                                        <strong>backup em nuvem</strong> pronta para atender a demanda de arquivos cruciais tanto para
+                                        a segurança do seu negócio quanto das pessoas que interagem com ele.    
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -357,6 +416,7 @@
     <script src="source/js/bootstrap.bundle.min.js"></script>
     <script src="source/js/glider.min.js"></script>
     <script src="source/js/sweetalert2.all.min.js"></script>
+    <script src="source/js/colorrotator.min.js"></script>
 
     <script src="js/Carousel.js"></script>
     <script src="js/Reviews.js"></script>

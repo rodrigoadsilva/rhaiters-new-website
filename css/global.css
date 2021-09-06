@@ -55,7 +55,7 @@ html, body {
 }
 
 .sessao-opinioes {
-    background: url("../assets/images/opinions/background_2.jpg") fixed center no-repeat;
+    background: url("../assets/images/opinions/background_1.jpg") fixed center no-repeat;
     
 }
 .sessao-contato{
@@ -99,6 +99,11 @@ html, body {
 
 .citacao{
     font-family: 'Zilla Slab', serif;
+}
+
+.alternative-p{
+    text-align: justify;
+    color: #4a4a4a;
 }
 
 @media only screen and (max-width: 600px) {

@@ -24,7 +24,7 @@ $(document).ready(function(){
         console.log(oiTipoServico);
         console.log(oiDescricao.val());
         
-        $.post("/rhaiters-new-website/php/orcamento.php", {
+        $.post("/novo/php/orcamento.php", {
                 orcamentoNome: oiNome.val(),
                 orcamentoNumero: oiNumero.val(),
                 orcamentoEmail: email,
@@ -44,6 +44,7 @@ $(document).ready(function(){
                             timer: 2500,
                             timerProgressBar: true
                         });
+                        console.log(data.sendTo);
                         ciNome.val('');
                         ciNumero.val('');
                         ciMensagem.val('');

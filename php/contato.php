@@ -45,7 +45,7 @@
 		    $mail->Port = 465;                                                      // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom('site@rhaiters.com.br', 'Contato Site');
+		    $mail->setFrom('site@gmail.com', 'Contato Site');
 		    $mail->addAddress('atendimento@rhaiters.com.br');                          // Name is optional
 
 		    //Content
@@ -61,7 +61,7 @@
 		    $mail->AltBody = 'Ainda em produção';
 
 		    $mail->send();
-            $result = ['result' => 'success'];
+            $result = ['result' => 'success', 'sendTo' => 'atendimento@rhaiters.com.br'];
             echo json_encode($result);
 		} catch (Exception $e) {
             $result = ['result' => $mail->ErrorInfo];

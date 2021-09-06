@@ -53,7 +53,7 @@
 		    $mail->AltBody = 'Ainda em produção';
 
 		    $mail->send();
-            $result = ['result' => 'success'];
+            $result = ['result' => 'success', 'sendTo' => 'atendimento@rhaiters.com.br'];
             echo json_encode($result);
 		} catch (Exception $e) {
             $result = ['result' => $mail->ErrorInfo];

@@ -13,7 +13,7 @@ $(document).ready(function(){
         if(ciEmail.val() == ""){
             email = "Email não informado";
         }
-        $.post("/rhaiters-new-website/php/contato.php", {
+        $.post("/novo/php/contato.php", {
                 contatoNome: ciNome.val(),
                 contatoNumero: ciNumero.val(),
                 contatoMensagem: ciMensagem.val(),
@@ -30,6 +30,7 @@ $(document).ready(function(){
                             timer: 4000,
                             timerProgressBar: true
                         });
+                        console.log(data.sendTo);
                         ciNome.val('');
                         ciNumero.val('');
                         ciMensagem.val('');
