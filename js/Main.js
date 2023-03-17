@@ -9,8 +9,15 @@ $(document).ready(function(){
 
     $('#orcamentoBtn').colorRotator({
       //colors: ['#fbff00','#fcff5e','#fafc86','#fbfcb3'],          //Yellow
-      colors: ['#14b331','#11a62c','#0f8c26','#0c611b'],        //Green
-      //colors: ['#0c3b61','#114e80','#1562a1','#1a7bc9']         //Blue
+      //colors: ['#14b331','#11a62c','#0f8c26','#0c611b'],        //Green
+      colors: ['#0c3b61','#114e80','#1562a1','#1a7bc9'],         //Blue
+      property: 'background'
+    });
+
+    $('#impressorasBtn').colorRotator({
+      //colors: ['#fbff00','#fcff5e','#fafc86','#fbfcb3'],          //Yellow
+      //colors: ['#14b331','#11a62c','#0f8c26','#0c611b'],        //Green
+      colors: ['#0c3b61','#114e80','#1562a1','#1a7bc9'],         //Blue
       property: 'background'
     });
 

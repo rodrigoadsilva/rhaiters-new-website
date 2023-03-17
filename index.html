@@ -35,7 +35,6 @@
                 <img src="assets/images/icon_logo.png" width="32" height="32" alt="">
                 <img src="assets/images/company_name.png" width="150" height="32" alt="">
             </a>
-            <a class="btn btn-primary btn-sm pulse mx-1" href="https://lojaraiters.com.br/" target="_blank"><i class="fas fa-shopping-cart"></i> Loja Virtual</a>
             <button id="navbarToggle" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,23 +47,33 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll text-end">
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" href="#sessaoServicos">
+                            <i class="fas fa-caret-right"></i> Serviços
+                        </a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sessaoServicos">Serviços</a>
+                        <a class="nav-link" href="/impressoras.html">
+                            <i class="fas fa-caret-right"></i> Impressoras
+                        </a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sessaoOpinioes">Opiniões</a>
+                        <a class="nav-link" href="#sessaoOpinioes">
+                            <i class="fas fa-caret-right"></i> Opiniões
+                        </a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sessaoContato">Contato</a>
+                        <a class="nav-link" href="#sessaoContato">
+                            <i class="fas fa-caret-right"></i> Contato
+                        </a>
                     </li>
                     <hr class="my-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#rodape">Sobre a Empresa</a>
+                        <a class="nav-link" href="#rodape">
+                            <i class="fas fa-caret-right"></i> Sobre a Empresa
+                        </a>
                     </li>
                     <hr class="my-0 text-white">
                 </ul>
@@ -82,7 +91,7 @@
                             alta qualidade</h4>                        
                     </div>
                     <div class="col-12 d-flex justify-content-center pt-5">
-                        <a id="orcamentoBtn" class="btn text-white btn-lg" onclick="$('#orcamentoModal').modal('toggle')">SOLICITE UM ORÇAMENTO</a>
+                        <a id="orcamentoBtn" class="btn btn-primary text-white btn-lg" onclick="$('#orcamentoModal').modal('toggle')">SOLICITE UM ORÇAMENTO</a>
                     </div>
                 </div>
             </div>
@@ -99,10 +108,10 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="container py-5">
-                        <h1 class="display-4 text-center mb-4 mt-2"><strong>Conheça nossos serviços</strong></h1>
+                        <p class="fs-1 text-center mb-4 mt-2">Conheça nossos <strong>serviços</strong></p>
                         <hr>
                         <div class="row mb-5">
-                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                            <div class="col-md-3 py-4 d-flex justify-content-center">
                                 <img src="assets/images/services/notebook.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
                             <div class="col-md-9 d-flex align-items-center">
@@ -125,8 +134,9 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row mb-5">
-                            <div class="col-md-3 mb-3 order-md-2 d-flex justify-content-center">
+                            <div class="col-md-3 py-4 order-md-2 d-flex justify-content-center">
                                 <img src="assets/images/services/suporte_remoto.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
                             <div class="col-md-9 order-md-1 d-flex align-items-center">
@@ -148,8 +158,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row mb-5">
-                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                            <div class="col-md-3 py-4 d-flex justify-content-center">
                                 <img src="assets/images/services/cftv.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
                             <div class="col-md-9 d-flex align-items-center">
@@ -170,23 +181,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row mb-5">
-                            <div class="col-md-3 mb-3 order-md-2 d-flex justify-content-center">
-                                <img src="assets/images/services/impressora.jpg" class="img-fluid rounded-circle service-image" alt="">
-                            </div>
-                            <div class="col-md-9 order-md-1 d-flex align-items-center">
-                                <div>
-                                    <h2 class="text-center">Impressoras e Suprimentos</h2>
-                                    <p class="alternative-p">
-                                        Oferecemos aos nossos clientes redução de custos com impressões por meio de planos de locação de 
-                                        impressoras monocromáticas, jato de tinta e laser. Disponibilizamos suporte remoto, manutenção 
-                                        periódica e fornecemos suprimentos (tinta ou toner).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3 d-flex justify-content-center">
+                            <div class="col-md-3 py-4 order-md-2 d-flex justify-content-center">
                                 <img src="assets/images/services/backup.jpg" class="img-fluid rounded-circle service-image" alt="">
                             </div>
                             <div class="col-md-9 d-flex align-items-center">
@@ -197,9 +194,39 @@
                                         ataques cibernéticos ou apenas acidentes.<br/>
                                         Pensando nisso é que disponibilizamos para nossos clientes uma infraestrutura de 
                                         <strong>backup em nuvem</strong> pronta para atender a demanda de arquivos cruciais tanto para
-                                        a segurança do seu negócio quanto das pessoas que interagem com ele.    
+                                        a segurança do seu negócio quanto das pessoas que interagem com ele.   
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessaoImpressoras" class="sessao-impressoras">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="container pt-5 mb-5">
+                        <p class="fs-1 text-center text-white mb-4 mt-2">Especialistas em <strong>Impressoras</strong></p>
+                        <hr class="text-white">
+                        <div class="row">
+                            <div class="col-md-5 py-4 d-flex justify-content-center">
+                                <img src="assets/images/impressoras/ilustration-home.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="fs-5 text-light text-center lh-lg">
+                                    Oferecemos aos nossos clientes redução de custos com impressões por meio de planos de locação de 
+                                    impressoras monocromáticas, jato de tinta e laser. Disponibilizamos suporte remoto, manutenção 
+                                    periódica e fornecemos suprimentos (tinta ou toner).
+                                </p>
+                                <p class="text-center">
+                                    <a id="impressorasBtn" class="btn btn-primary" href="/rhaiters-new-website/impressoras.html" target="_blank">
+                                        Saiba mais...
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -213,22 +240,16 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="container pt-5 mb-5">
-                        <h1 class="display-4 text-center mb-4 mt-2"><strong>Veja o que estão falando</strong></h1>
+                        <p class="fs-1 text-center mb-4 mt-2">Veja o que estão falando</p>
                         <hr>
                         <div class="glider-contain">
                             <div id="carouselReviews" class="glider">
                             </div>
-                            
-                            <!-- Botões e pontos para navegação do carrosel-->
-                            <!--<button aria-label="Previous" class="glider-prev">«</button>
-                            <button aria-label="Next" class="glider-next">»</button>
-                            <div role="tablist" class="dots"></div>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section id="sessaoContato" class="sessao-contato">

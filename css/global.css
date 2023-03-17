@@ -54,6 +54,11 @@ html, body {
     background-size: 100% 100%;
 }
 
+.sessao-impressoras {
+    background: url("../assets/images/impressoras/cover-home.jpg") fixed center no-repeat;
+    background-size: 100% 100%;
+}
+
 .sessao-opinioes {
     background: url("../assets/images/opinions/background_1.jpg") fixed center no-repeat;
     
@@ -104,6 +109,19 @@ html, body {
 .alternative-p{
     text-align: justify;
     color: #4a4a4a;
+}
+
+.divider-services{
+    border-top: 1px dashed;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.service-image{
+    max-height:200px;
+    max-width:200px;
+    height:auto;
+    width:auto;
 }
 
 @media only screen and (max-width: 600px) {
