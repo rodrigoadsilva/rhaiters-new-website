@@ -37,6 +37,7 @@ $(document).ready(function(){
      $(window).scroll(function() {
         $('.navbar-collapse').collapse('hide');
     });
+
     // Check if navbar is toggle to change color
     let navbarBlack = false;
     $('#navbarToggle').on('click',function(){
@@ -53,6 +54,7 @@ $(document).ready(function(){
             navbarBlack = false;
         }
     });
+    
     // Check scroll to change navbar color
     $(window).scroll(function (event) {
         let scroll = $(window).scrollTop();

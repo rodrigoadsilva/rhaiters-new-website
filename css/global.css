@@ -68,6 +68,19 @@ html, body {
     background-size: 100% 100%;
 }
 
+.banner-impressão {
+    background-image: url("../assets/images/impressoras/banner-contrate.jpg");
+    background-size: 100%;
+    background-position: center center;
+}
+
+@media (max-width: 767px) {
+    .banner-impressão {
+        background-image: url("../assets/images/impressoras/banner-contrate-mobile.jpg");
+    }
+}
+
+
 .card {
     border: none;
     border-radius: 10px;
